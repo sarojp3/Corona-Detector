@@ -30,7 +30,9 @@ class Live extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  WebView(
-      initialUrl: 'https://www.worldometers.info/coronavirus/',
+      // initialUrl: 'https://www.worldometers.info/coronavirus/',
+      initialUrl: 'https://covid19.mohp.gov.np/',
+      javascriptMode: JavascriptMode.unrestricted
     );
   }
 }

@@ -26,6 +26,9 @@ dependencies:
   carousel_pro: ^0.0.1
   google_fonts: ^0.2.0
   webview_flutter: ^0.3.22+1
+  material_design_icons_flutter: ^4.0.5345
+  url_launcher: ^5.0.2
+  
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -57,6 +60,19 @@ flutter:
     - assets/images/insurance.png
     - assets/images/info.png
     - assets/images/facts.png
+    - assets/images/bg.png
+    - assets/images/logo.png
+    - assets/images/netesh.jpg
+    - assets/images/saroj.jpg
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+    - assets/images/4.png
+    - assets/images/new.png
+    - assets/images/new2.png
+    - assets/images/handwash.png
+    - assets/images/wearmask.png
+    - assets/images/scroll1.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
