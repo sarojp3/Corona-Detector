@@ -74,9 +74,7 @@ flutter:
     - assets/images/handwash.png
     - assets/images/wearmask.png
     - assets/images/scroll1.jpg
-    - assets/converted_vgg16.tflite
     - assets/labels.txt
-    - assets/model_unquant.tflite
     - assets/images/prashant.jpg
     - assets/images/rahul.jpg
     - assets/model_unquant2.tflite
