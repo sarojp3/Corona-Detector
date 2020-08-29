@@ -1,16 +1,13 @@
-# coronadetector
+# COVID-Detector 
 
-A new Flutter project.
+## Health and Urban Management
 
-## Getting Started
+This is our mobile app created using flutter which have multiple features:
+  - Live Covid Updates, which shows the latest number of cases in Nepal.
+  - A COVID Detector feature which uses machine learning model to detect COVID-19 positive or negative from person's Lung X-ray images.
+  - Some basic information about Corona Viruses like symptoms and preventive measures
+  - Testing Centers list available all over Nepal
+  
+  
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
