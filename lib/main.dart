@@ -1,3 +1,4 @@
+import 'package:coronadetector/myth.dart';
 import 'package:flutter/material.dart';
 import 'homepage.dart';
 import 'ourteam.dart';
@@ -15,9 +16,11 @@ class MyApp extends StatelessWidget {
         "/a":(BuildContext context) => OurTeam(),
         "/b":(BuildContext context) => HomePage(),
         "/c":(BuildContext context) => Contact(),
+        "/d":(BuildContext context) => MythvsFacts(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        
       ),
       home: SplashScreen(),
     );

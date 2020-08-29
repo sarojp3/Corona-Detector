@@ -3,6 +3,9 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'info.dart';
 import 'myth.dart';
 import 'live.dart';
+// import 'detector.dart';
+import 'tensorflow.dart';
+import 'testing.dart';
 
 
 
@@ -66,6 +69,16 @@ class HomePage extends StatelessWidget {
                 onTap: () => Navigator.of(context).pushNamed("/b"),
                 
                 ),
+
+                ListTile(
+                leading: Icon(
+                  Icons.lightbulb_outline,
+                  color: Colors.blue,
+                ),
+                title: Text('Myth v/s Facts', style: TextStyle(color: Colors.blue)),
+                onTap: () => Navigator.of(context).pushNamed("/d"),
+                ),
+
             ListTile(
                 leading: Icon(
                   Icons.people,
@@ -93,8 +106,7 @@ class HomePage extends StatelessWidget {
              children: <Widget>[
                image_carousel,
                Dashboard(),
-              
-              
+               
              ],
           ),
           
@@ -112,7 +124,7 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 425.0,
+      height: 400.0,
       padding: EdgeInsets.only(top:13.0),
       child:GridView.count(
         crossAxisCount: 2,
@@ -129,10 +141,32 @@ class Dashboard extends StatelessWidget {
                Center(
                 child: InkWell(
                   onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder:(context){
-                  return Liveupdate();
-            
-          }));
+                   Navigator.push(
+                                 context,
+                               PageRouteBuilder(
+                                 transitionDuration:Duration(milliseconds: 800),
+                                 transitionsBuilder: (BuildContext context,
+                                 Animation<double>animation,
+                                 Animation<double>secAnimation,
+                                 Widget child) {
+                                  
+                                  animation=CurvedAnimation(parent: animation, curve: Curves.elasticInOut);
+
+                                  return ScaleTransition(
+                                    alignment: Alignment.center,
+                                    scale: animation,
+                                    child: child,
+
+                                  );
+                                },
+                                pageBuilder: (BuildContext contect,
+                                Animation<double> animation,
+                                Animation<double> secAnimation
+                                ){
+                                  return Liveupdate();
+                                }
+                                  
+                               ));
               },
               child:Image.asset('assets/images/live.png',height: 150,width: 150,)
               ),
@@ -152,6 +186,32 @@ class Dashboard extends StatelessWidget {
                     Center(
                      child: InkWell(
               onTap: (){
+                 Navigator.push(
+                                 context,
+                               PageRouteBuilder(
+                                 transitionDuration:Duration(milliseconds: 800),
+                                 transitionsBuilder: (BuildContext context,
+                                 Animation<double>animation,
+                                 Animation<double>secAnimation,
+                                 Widget child) {
+                                  
+                                  animation=CurvedAnimation(parent: animation, curve: Curves.elasticInOut);
+
+                                  return ScaleTransition(
+                                    alignment: Alignment.center,
+                                    scale: animation,
+                                    child: child,
+
+                                  );
+                                },
+                                pageBuilder: (BuildContext contect,
+                                Animation<double> animation,
+                                Animation<double> secAnimation
+                                ){
+                                  return Tensorflow();
+                                }
+                                  
+                               ));
               },
               child:Image.asset('assets/images/detector.png',height: 150,width: 150,)   
               ),
@@ -170,9 +230,32 @@ class Dashboard extends StatelessWidget {
                     Center(
                      child: InkWell(
               onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder:(context){
-                            return Info();
-                       }));
+                         Navigator.push(
+                                 context,
+                               PageRouteBuilder(
+                                 transitionDuration:Duration(milliseconds: 800),
+                                 transitionsBuilder: (BuildContext context,
+                                 Animation<double>animation,
+                                 Animation<double>secAnimation,
+                                 Widget child) {
+                                  
+                                  animation=CurvedAnimation(parent: animation, curve: Curves.elasticInOut);
+
+                                  return ScaleTransition(
+                                    alignment: Alignment.center,
+                                    scale: animation,
+                                    child: child,
+
+                                  );
+                                },
+                                pageBuilder: (BuildContext contect,
+                                Animation<double> animation,
+                                Animation<double> secAnimation
+                                ){
+                                  return Info();
+                                }
+                                  
+                               ));
                      },
                 child:Image.asset('assets/images/info.png',height: 150,width: 150,)   
               
@@ -192,21 +275,47 @@ class Dashboard extends StatelessWidget {
                     Center(
                      child: InkWell(
               onTap: (){
-                               Navigator.push(context, MaterialPageRoute(builder:(context){
-                  return MythvsFacts();
-            
-          }));
+                               Navigator.push(
+                                 context,
+                               PageRouteBuilder(
+                                 transitionDuration:Duration(milliseconds: 800),
+                                 transitionsBuilder: (BuildContext context,
+                                 Animation<double>animation,
+                                 Animation<double>secAnimation,
+                                 Widget child) {
+                                  
+                                  animation=CurvedAnimation(parent: animation, curve: Curves.elasticInOut);
+
+                                  return ScaleTransition(
+                                    alignment: Alignment.center,
+                                    scale: animation,
+                                    child: child,
+
+                                  );
+                                },
+                                pageBuilder: (BuildContext contect,
+                                Animation<double> animation,
+                                Animation<double> secAnimation
+                                ){
+                                  return ListViewPage();
+                                }
+                                  
+                               ));
+                             
               },
-              child:Image.asset('assets/images/facts.png',height: 150,width: 150,)   
+              child:Image.asset('assets/images/testing.png',height: 150,width: 150,)   
               
               ),
                     ),
                   ]
                 ),
-              )
+              ),
+           
+              
 
         ],
-      )
+      ),
     );
   }
 }
+

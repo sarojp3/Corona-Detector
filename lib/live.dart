@@ -11,7 +11,7 @@ class _LiveupdateState extends State<Liveupdate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xff2c341), 
+      backgroundColor:Color(0xff1F1E1E), 
         appBar:AppBar(
           backgroundColor:Color(0xff1F1E1E),
              title: Row(

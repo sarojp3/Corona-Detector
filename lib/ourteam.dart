@@ -245,8 +245,122 @@ class Members extends StatelessWidget {
             ),
           ],
         ),
-      ],
 
+          // 3rd member
+
+        SizedBox(
+          height: 70,
+        ),
+        CircleAvatar(
+          radius:80,
+          backgroundImage: AssetImage('assets/images/prashant.jpg'),
+        ),
+        Padding(padding: EdgeInsets.only(top:15)),
+        Text("Prashant Singh",style: TextStyle(color:Colors.white,fontSize:20),),
+        SizedBox(height:10),
+        Row(
+          children: <Widget>[
+            Row(
+              children:<Widget>[
+          
+                         Padding(
+                          padding: const EdgeInsets.only(left:150.0),
+                          child: InkWell(
+                            child: Material(
+                                color: new Color(0xffffffff),
+                                shape: CircleBorder(),
+                                  child: Icon(MdiIcons.linkedin,
+                                      color:Color(0xff0E76A8),
+                                      size: 40.0),
+                                
+                            ),
+                            onTap: () {
+                              launch('https://www.linkedin.com/in/prashant-singh-65072a18a/');
+                            },
+                          ),
+                        ),
+
+                         Padding(
+                          padding: const EdgeInsets.only(left:30.0),
+                          child: InkWell(
+                            child: Material(
+                                color: new Color(0xffffffff),
+                                shape: CircleBorder(),
+                                  child: Icon(MdiIcons.github,
+                                      color:Colors.black,
+                                      size: 40.0),
+                                
+                            ),
+                            onTap: () {
+                              launch('https://github.com/ls-da3m0ns');
+                            },
+                          ),
+                        ),
+
+        
+          ],
+        ),
+      ],
+            ),
+
+//4th member
+SizedBox(
+          height: 70,
+        ),
+        CircleAvatar(
+          radius:80,
+          backgroundImage: AssetImage('assets/images/rahul.jpg'),
+        ),
+        Padding(padding: EdgeInsets.only(top:15)),
+        Text("Rahul Kumar",style: TextStyle(color:Colors.white,fontSize:20),),
+        SizedBox(height:10),
+        Row(
+          children: <Widget>[
+            Row(
+              children:<Widget>[
+          
+                         Padding(
+                          padding: const EdgeInsets.only(left:150.0),
+                          child: InkWell(
+                            child: Material(
+                                color: new Color(0xffffffff),
+                                shape: CircleBorder(),
+                                  child: Icon(MdiIcons.twitter,
+                                      color:Color(0xff55ADEE),
+                                      size: 40.0),
+                                
+                            ),
+                            onTap: () {
+                              launch('https://twitter.com/settingsingh');
+                            },
+                          ),
+                        ),
+
+                         Padding(
+                          padding: const EdgeInsets.only(left:30.0),
+                          child: InkWell(
+                            child: Material(
+                                color: new Color(0xffffffff),
+                                shape: CircleBorder(),
+                                  child: Icon(MdiIcons.github,
+                                      color:Colors.black,
+                                      size: 40.0),
+                                
+                            ),
+                            onTap: () {
+                              launch('https://github.com/settingsingh');
+                            },
+                          ),
+                        ),
+      
+                ]
+            ),
+
+
+          ],
+        ),
+      ]
     );
   }
 }
+

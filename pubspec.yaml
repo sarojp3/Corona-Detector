@@ -28,6 +28,8 @@ dependencies:
   webview_flutter: ^0.3.22+1
   material_design_icons_flutter: ^4.0.5345
   url_launcher: ^5.0.2
+  image_picker: ^0.6.7+7
+  tflite: ^1.1.1
   
 
 
@@ -60,7 +62,6 @@ flutter:
     - assets/images/insurance.png
     - assets/images/info.png
     - assets/images/facts.png
-    - assets/images/bg.png
     - assets/images/logo.png
     - assets/images/netesh.jpg
     - assets/images/saroj.jpg
@@ -73,6 +74,15 @@ flutter:
     - assets/images/handwash.png
     - assets/images/wearmask.png
     - assets/images/scroll1.jpg
+    - assets/converted_vgg16.tflite
+    - assets/labels.txt
+    - assets/model_unquant.tflite
+    - assets/images/prashant.jpg
+    - assets/images/rahul.jpg
+    - assets/model_unquant2.tflite
+    - assets/pneumonia.tflite
+    - assets/images/testing.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
